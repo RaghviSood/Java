@@ -1,0 +1,17 @@
+class Player {
+    int runs;
+    float average;     
+    boolean isCaptain; 
+    void display() {
+        System.out.println("Stats of Ravindra Jadeja:");
+        System.out.println("Runs: " + runs);
+        System.out.println("Average: " + average);
+        System.out.println("Is Captain: " + isCaptain);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Player jadeja = new Player();
+        jadeja.display();
+    }
+}
