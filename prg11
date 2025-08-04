@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("Ravindrasinh Anirudhsinh Jadeja");
+        System.out.println("Original: " + sb);
+        sb.append(" - The All-Rounder");
+        System.out.println("After append: " + sb);
+        sb.insert(12, " (Sir)");
+        System.out.println("After insert: " + sb);
+        int start = sb.indexOf("Jadeja");
+        sb.replace(start, start + 6, "Legend");
+        System.out.println("After replace: " + sb);
+        sb.reverse();
+        System.out.println("After reverse: " + sb);
+    }
+}
+
