@@ -1,0 +1,28 @@
+class Student {
+    void activity() {
+        System.out.println("Student is studying in class.");
+    }
+}
+class SportsStudent extends Student {
+    void activity() {
+        System.out.println("Sports student is playing football.");
+    }
+}
+class Marks {
+    void showResult(int rollNo, int marks) {
+        System.out.println("Roll No: " + rollNo + ", Marks: " + marks);
+    }
+    void showResult(int rollNo, int m1, int m2, int m3) {
+        int total = m1 + m2 + m3;
+        System.out.println("Roll No: " + rollNo + ", Total Marks: " + total);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Student s = new SportsStudent();
+        s.activity();
+        Marks result = new Marks();
+        result.showResult(101, 85);
+        result.showResult(102, 70, 80, 90);
+    }
+}
