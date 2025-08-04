@@ -1,0 +1,36 @@
+class Player {
+    String name;
+    Player(String name) {
+        this.name = name;
+    }
+    void play() {
+        System.out.println(name + " is playing cricket");
+    }
+}
+class Batsman extends Player {
+    Batsman(String name) {
+        super(name);
+    }
+    void play() {
+        System.out.println(name + " is batting");
+    }
+}
+class Bowler extends Player {
+    Bowler(String name) {
+        super(name);
+    }
+    void play() {
+        System.out.println(name + " is bowling");
+    }
+}
+public class Main {  
+    public static void main(String[] args) {
+        Player p;
+
+        p = new Batsman("Ravindra Jadeja");
+        p.play();
+
+        p = new Bowler("Jasprit Bumrah");
+        p.play();
+    }
+}
