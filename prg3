@@ -1,0 +1,19 @@
+abstract class Student {
+    abstract void studying();
+    abstract void playing();
+}
+class SchoolStudent extends Student {
+    void studying() {
+        System.out.println("Student is studying.");
+    }
+    void playing() {
+        System.out.println("Student is playing.");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Student s = new SchoolStudent();
+        s.studying();
+        s.playing();
+    }
+}
