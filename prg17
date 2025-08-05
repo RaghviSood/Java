@@ -1,0 +1,13 @@
+public class Main { 
+    public static void main(String[] args) { 
+        int age = 56; 
+        int salary = 70000; 
+        int rollNumber = 8; 
+        int student1 = 2; 
+        System.out.println("Valid Identifiers:"); 
+        System.out.println("age = " + age); 
+        System.out.println("salary = " + salary); 
+        System.out.println("rollNumber = " + rollNumber); 
+        System.out.println("student1 = " + student1); 
+    } 
+}
